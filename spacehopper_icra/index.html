@@ -1,0 +1,177 @@
+
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>SpaceHopper</title>
+
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+    
+    <script src="js/app.js"></script>
+</head>
+
+<body>
+    <div class="container" id="main">
+        <div class="row">
+            <h2 class="col-md-12 text-center">
+                <b>SpaceHopper</b>: A Small-Scale Legged Robot for Exploring Low-Gravity
+                Celestial Bodies
+                <small>
+                    ICRA 2024 Accepted Paper
+                </small>
+            </h2>
+        </div>
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <ul class="list-inline">
+                    <li>
+                        <a href="https://aspiridon0v.github.io/">
+                          Alexander Spiridonov*<sup>1</sup>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/fabio-b%C3%BChler-108365241/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_admin%3BQmAheMtATRmHqmVTc8oebQ%3D%3D">
+                            Fabio Buehler<sup>1</sup>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/moriz-berclaz/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_admin%3BQmAheMtATRmHqmVTc8oebQ%3D%3D">
+                          Moriz Berclaz<sup>1</sup>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/valerio-schelbert/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_admin%3BQmAheMtATRmHqmVTc8oebQ%3D%3D">
+                          Valerio Schelbert<sup>1</sup>
+                        </a>
+        
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/jorit-geurts-1765a924a/?lipi=urn%3Ali%3Apage%3Ad_flagship3_company_admin%3BQmAheMtATRmHqmVTc8oebQ%3D%3D">
+                          Jorit Geurts<sup>1</sup>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        Elena Krasnova<sup>1</sup>
+                        
+                    </li>
+                    <li>
+                        Emma Steinke<sup>1</sup>
+                        
+                    </li>
+                    <li>
+                        Jonas Toma<sup>2</sup>
+                        
+                    </li><br>
+                    <li>
+                        Joschua Wuethrich<sup>1</sup>
+                        
+                    </li>
+                    <li>
+                        Recep Polat<sup>1</sup>
+                        
+                    </li>
+                    <li>
+                        Wim Zimmermann<sup>2</sup>
+                        
+                    </li>
+                    <li>
+                        <a href="https://mavt.ethz.ch/de/personen/person-detail.MjE0NDQw.TGlzdC81NTksLTE3MDY5NzgwMTc=.html">
+                          Philip Arm<sup>1</sup>
+                        </a>
+                        
+                    </li>
+                    <li>
+                        <a href="https://ch.linkedin.com/in/nikita-rudin-bb3199121">
+                        Nikita Rudin<sup>1</sup>
+                        </a>
+                    </li><br>
+                    <li>
+                        <a href="https://mavt.ethz.ch/people/person-detail.MjI5MTE3.TGlzdC81NTksLTE3MDY5NzgwMTc=.html">
+                        Hendrik Kolvenbach<sup>1</sup>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://rsl.ethz.ch/the-lab/people/person-detail.MTIxOTEx.TGlzdC8yNDQxLC0xNDI1MTk1NzM1.html">
+                          Prof. Dr. Marco Hutter<sup>1</sup>
+                        </a>
+                        
+                    </li>
+                </ul>
+                <ul class="list-inline">
+                    <li>
+                        ETH Zurich<sup>1</sup>
+                    </li>
+                    <li>
+                        ZHAW<sup>2</sup>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 col-md-offset-4 text-center">
+                <ul class="nav nav-pills nav-justified">
+                    <li>
+                        <a href="/spacehopper_icra/pdf/SpaceHopper_Paper_arxiv.pdf">
+                        <image src="/spacehopper_icra/img/spacehopperpaper.png" class="mini"></image>
+                            <h4><strong>Paper</strong></h4>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <video id="v0" width="100%" autoplay loop muted controls>
+                  <source src="videos/SpaceHopper_clips.mp4" type="video/mp4" />
+                </video>
+						</div>
+            <div class="col-md-8 col-md-offset-2">
+						</div>
+        </div>
+
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <h3>
+                    Abstract
+                </h3>
+                <p class="text-justify">
+                    We present SpaceHopper, a three-legged, small-scale robot designed for future mobile exploration of asteroids and moons. The robot weighs 5.2kg and has a body size of 245mm while using space-qualifiable components. Furthermore, SpaceHopper's design and controls make it well-adapted for investigating dynamic locomotion modes with extended flight-phases. Instead of gyroscopes or fly-wheels, the system uses its three legs to reorient the body during flight in preparation for landing. We control the leg motion for reorientation using Deep Reinforcement Learning policies. In a simulation of Ceres' gravity (0.029g), the robot can reliably jump to commanded positions up to 6m away. Our real-world experiments show that SpaceHopper can successfully reorient to a safe landing orientation within 9.7 degree inside a rotational gimbal and jump in a counterweight setup in Earth's gravity. Overall, we consider SpaceHopper an important step towards controlled jumping locomotion in low-gravity environments.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-8 col-md-offset-2">
+                <p style="text-align:right;">
+                    <br>
+                <a href="http://mgharbi.com/">Website Template</a>.
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
